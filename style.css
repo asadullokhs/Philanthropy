@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto !important;
+}
+
+:root {
+  --light-bg: #fef9f2;
+  --btn-color: #ff9c08;
+  --text-color: #6e6e6e;
+}
+
+header .container .logo {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+header nav .container {
+  display: flex;
+  margin: 30px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container ul {
+  display: flex;
+  list-style-type: none;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 17px;
+  gap: 30px;
+}
+
+nav .container .donate button {
+  width: 142px;
+  height: 54px;
+  left: 88px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--btn-color);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+section .container {
+  display: flex;
+  margin-left: 40px;
+}
+
+section .info {
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 20px;
+  width: 650px;
+}
+
+section .info .line {
+  width: 140px;
+  height: 4px;
+  background-color: var(--btn-color);
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+section .info h1 {
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 79.98px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+section .info p {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.99px;
+  text-align: left;
+  color: #6e6e6e;
+  margin-bottom: 30px;
+}
+
+.hero .info .donate-now {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background-color: var(--btn-color);
+  width: 180px;
+  height: 71px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  border: none;
+  margin-right: 20px;
+}
+
+.hero .info .about-btn {
+  width: 225px;
+  height: 73px;
+  gap: 0px;
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #090909;
+  box-shadow: 0px 4px 10px 0px #2b2b2b0a;
+  width: 225px;
+  border: 1px solid #f0ece8;
+  background-color: transparent;
+}
+
+.hero .image {
+  background: url(./img/nigga.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 677px;
+  height: 800px;
+}
+
+.footer {
+  padding-top: 150px;
+  background-color: var(--light-bg);
+}
+.footer .container {
+  border-bottom: 1px solid #dad1ca;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.98px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footer .container b {
+  color: var(--btn-color);
+  font-weight: bold;
+}
+
+.footer .container p {
+  font-family: DM Sans !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 37.99px !important;
+  text-align: left !important;
+  color: #6e6e6e !important;
+}
+
+.about {
+  background-color: var(--light-bg);
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.about .row {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.about .left b {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--btn-color);
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.about .left h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.01px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.about .right {
+  width: 50%;
+}
+
+.about .left img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.about .right .button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.dark-btn {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  background: var(--btn-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.light-btn {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  box-shadow: 0px 4px 10px 0px #2b2b2b0a;
+  cursor: pointer;
+}
+
+.about .right img {
+  height: 900px;
+  margin-bottom: 60px;
+}
+
+.about .right ul {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+.about .right ul li {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.about .right ul li p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #090909;
+}
+
+.about .right ul li::before {
+  content: "+";
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: 500;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.help{
+  padding-top: 150px;
+}
+
+.help .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.help .top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help .top .text b{
+  font-size: 20px;
+  color: var(--btn-color);
+  font-weight: 300;
+}
+.help .top .text h2{
+   font-size: 40px;
+   margin-top: 30px;
+}
+
+.help .bottom {
+  padding-top: 60px;
+}
+
+.help .bottom .row{
+  display: flex;
+  margin-top: 40px;
+  gap: 4%;
+}
+
+.help .bottom .row .card{
+  width: 32%;
+  text-align: center;
+  box-shadow: 0px 2px 12px 0px #2B2B2B0F;
+  border-radius: 12px;
+  padding: 50px;
+}
+
+.card h3{
+font-size: 30px;
+font-weight: 700;
+line-height: 34.01px;
+text-align: center;
+margin: 20px 0;
+}
+
+.card p{
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+.box{
+  margin-top: 150px !important;
+  padding: 100px 60px;
+  border-radius: 40px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .content{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .content h2{
+width: 50%;
+font-size: 50px;
+font-weight: 700;
+line-height: 58px;
+}
+
+.box .content .buttons{
+  display: flex;
+  gap: 20px ;
+}
+
+.box .content .dark-btn{
+  background-color: #090909;
+  color: white;
+}
+.box .content .light-btn{
+  background-color: white;
+  color:#090909;
+}
+
+
+footer{
+  background-color: var(--light-bg);
+  padding: 110px 40px;
+
+}
+
+footer .row{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo{
+  width: 30%;
+}
+
+footer .logo p{
+color: var(--text-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 30.01px;
+text-align: left;
+margin-top: 30px;
+}
+
+footer .list h5{
+
+font-size: 20px;
+font-weight: 700;
+line-height: 22px;
+margin-bottom: 20px;
+}
+
+footer .flex{
+  display: flex;
+  gap: 50px ;
+}
+
+footer .list ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px ;
+}
+
+footer .footer-box{
+  width: 30%;
+  background-color: var(--btn-color);
+  border-radius: 40px;
+  padding: 40px;
+}
+
+footer h2{
+
+font-size: 24px;
+font-weight: 700;
+line-height: 34.01px;
+text-align: left;
+margin-bottom: 30px;
+
+}
+
+footer .dark-btn{
+  width: 100%;
+  color: white;
+  background-color: #090909;
+  margin-bottom: 20px;
+}
+footer .light-btn{
+  width: 100%;
+  color:#090909;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width:480px){
+    header .container .logo {
+        width: auto;
+      }
+      
+      header nav .container {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav .container ul {
+       display: none;
+      }
+      
+      nav .container .donate button {
+        width: auto;
+        height: 54px;
+        background-color: var(--btn-color);
+      }
+
+      nav .container .donate img{
+         display: none;
+      }
+      
+      section .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      
+      section .info {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+      }
+      
+      section .info .line {
+        width: 100px;
+        margin-bottom: 15px;
+      }
+      
+      section .info h1 {
+        font-size: 48px;
+      }
+      
+      section .info p {
+        font-size: 18px;
+      }
+      
+      .hero .info .donate-now {
+        width: 70%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      
+      .hero .info .about-btn {
+       display: none;
+      }
+      
+      .hero .image {
+        display: none;
+      }
+      
+      .footer {
+        padding-top: 50px;
+      }
+      .footer .container {
+        font-size: 50px;
+      }
+      
+      .footer .container p {
+        text-align: center !important;
+      }
+      
+      .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .about .row {
+        flex-direction: column;
+      }
+      
+     
+      
+      .about .left h2 {
+        font-size: 40px;
+      }
+      .about .right {
+        width: 100%;
+      }
+      
+      .about .left img {
+        width: 100%;
+      }
+      
+      .about .right .button-group {
+    
+        justify-content: center;
+
+      }
+      
+      .about .right img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 60px;
+      }
+
+      .help{
+        padding-top: 50px;
+      }
+      
+      .help .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .help .top .dark-btn{
+        display: none;
+      }
+
+      .help .top .text {
+        text-align: center;
+      }
+      
+      .help .top .text b{
+        font-size: 18px;
+        text-align: center;
+      }
+      .help .top .text h2{
+         font-size: 35px;
+         margin-top: 30px;
+      }
+      
+      .help .bottom {
+        padding-top: 0px;
+      }
+      
+      .help .bottom .row{
+        flex-direction: column;
+      }
+      
+      .help .bottom .row .card{
+        width: 100%;
+      }
+      .box{
+        margin-top: 50px !important;
+        padding: 60px 30px;
+      }
+      
+      .box .content{
+       flex-direction: column;
+      }
+      
+      .box .content h2{
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 40px;
+      margin-bottom: 20px;
+      }
+
+
+footer{
+  padding: 65px 20px;
+}
+
+footer .row{
+  flex-direction: column;
+}
+
+footer .logo{
+  width: 100%;
+  text-align: center;
+}
+
+footer .logo p{
+text-align: center;
+}
+
+footer .flex{
+  display: flex;
+  margin: 40px 0;
+  justify-content: space-around;
+} 
+
+
+footer .footer-box{
+  width: 100%;
+}    
+}
